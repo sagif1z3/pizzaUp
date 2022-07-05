@@ -1,4 +1,4 @@
-package com.starshaf.pizzaup.service;
+package com.starshaf.pizzaup.services;
 
 import com.starshaf.pizzaup.models.User;
 import java.util.List;

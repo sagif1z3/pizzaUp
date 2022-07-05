@@ -1,7 +1,7 @@
-package com.starshaf.pizzaup.controller;
+package com.starshaf.pizzaup.controllers;
 
 import com.starshaf.pizzaup.models.User;
-import com.starshaf.pizzaup.service.UserService;
+import com.starshaf.pizzaup.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,9 +1,10 @@
-package com.starshaf.pizzaup.service;
+package com.starshaf.pizzaup.services;
 
 import com.starshaf.pizzaup.converters.UserEntityToUser;
 import com.starshaf.pizzaup.converters.UserToUserEntity;
 import com.starshaf.pizzaup.models.User;
 import com.starshaf.pizzaup.repositories.UserRepository;
+import com.starshaf.pizzaup.services.UserService;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
