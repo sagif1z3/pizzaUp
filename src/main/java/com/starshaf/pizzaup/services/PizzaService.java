@@ -19,7 +19,9 @@ public class PizzaService {
     private final PizzaModelToPizzaEntityConverter pizzaModelToPizzaEntityConverter;
 
     @Autowired
-    public PizzaService(PizzaRepository pizzaRepository, @Lazy PizzaEntityToPizzaModelConverter pizzaEntityToPizzaModelConverter, @Lazy PizzaModelToPizzaEntityConverter pizzaModelToPizzaEntityConverter) {
+    public PizzaService(PizzaRepository pizzaRepository,
+                        @Lazy PizzaEntityToPizzaModelConverter pizzaEntityToPizzaModelConverter,
+                        @Lazy PizzaModelToPizzaEntityConverter pizzaModelToPizzaEntityConverter) {
         this.pizzaRepository = pizzaRepository;
         this.pizzaEntityToPizzaModelConverter = pizzaEntityToPizzaModelConverter;
         this.pizzaModelToPizzaEntityConverter = pizzaModelToPizzaEntityConverter;

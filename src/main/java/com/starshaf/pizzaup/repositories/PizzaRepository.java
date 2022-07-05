@@ -12,7 +12,7 @@ public interface PizzaRepository extends JpaRepository<PizzaEntity, Integer> {
     boolean existsByName(String name);
 
     @Query("SELECT new com.starshaf.pizzaup.models.PizzaModel(p.id, p.name, p.size, p.toppings, p.price) " +
-            "FROM PizzaEntity p WHERE id= :id")
+            "FROM PizzaEntity p WHERE p.id= :id")
     PizzaModel getPizzaModel(@Param("id") int id);
 
     @Query("SELECT new com.starshaf.pizzaup.models.PizzaModel(p.id, p.name, p.size, p.toppings, p.price) " +

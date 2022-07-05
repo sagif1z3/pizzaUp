@@ -3,7 +3,9 @@ package com.starshaf.pizzaup.converters;
 import com.starshaf.pizzaup.entities.PizzaEntity;
 import com.starshaf.pizzaup.models.PizzaModel;
 import org.springframework.core.convert.converter.Converter;
+import org.springframework.stereotype.Component;
 
+@Component
 public class PizzaModelToPizzaEntityConverter implements Converter<PizzaModel, PizzaEntity> {
 
     @Override

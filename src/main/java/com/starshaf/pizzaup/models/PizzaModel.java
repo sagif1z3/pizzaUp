@@ -2,11 +2,15 @@ package com.starshaf.pizzaup.models;
 
 import com.starshaf.pizzaup.enums.Size;
 import com.starshaf.pizzaup.enums.Toppings;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class PizzaModel {
     private int id;
     private String name;
