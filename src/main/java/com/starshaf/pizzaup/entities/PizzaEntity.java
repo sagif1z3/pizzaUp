@@ -6,8 +6,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @Builder
@@ -35,4 +35,7 @@ public class PizzaEntity {
 
     @Column(name = "price")
     private float price;
+
+    @OneToMany(cascade = CascadeType.REMOVE, mappedBy = "pizzaEntity")
+    private List<OrderEntity> orderEntity;
 }

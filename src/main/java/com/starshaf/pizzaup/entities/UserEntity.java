@@ -4,8 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @Builder
@@ -34,4 +34,7 @@ public class UserEntity {
 
     @Column(name = "phone_number", nullable = false)
     private String phoneNumber;
+
+    @OneToMany(cascade = CascadeType.REMOVE, mappedBy = "userEntity")
+    private List<OrderEntity> orderEntities;
 }
