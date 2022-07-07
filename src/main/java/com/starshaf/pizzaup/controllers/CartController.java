@@ -23,7 +23,7 @@ public class CartController {
         return cartService.addCart(cartModel);
     }
 
-    @PutMapping("/add/{cartId}/{pizzaId}")
+    @PutMapping("/add/cart/{cartId}/pizza/{pizzaId}")
     public void removePizzaFromCart(@PathVariable("cartId") long cartId, @PathVariable("pizzaId") int pizzaId){
         cartService.removePizzaFromCart(pizzaId, cartId);
     }

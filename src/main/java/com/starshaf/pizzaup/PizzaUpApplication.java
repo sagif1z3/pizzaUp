@@ -8,5 +8,6 @@ public class PizzaUpApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(PizzaUpApplication.class, args);
+        System.out.println("1234");
     }
 }
